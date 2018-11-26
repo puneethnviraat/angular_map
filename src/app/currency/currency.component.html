@@ -1,3 +1,13 @@
 <p>
   currency works!
 </p>
+
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="search by language" style="width: 300px;" [(ngModel)] = "searchTerm" />
+</div>
+<ul>
+  <li *ngFor="let post of names | filter : searchTerm ">
+    <a routerLink="#">{{ post}}</a>
+
+  </li>
+</ul>
