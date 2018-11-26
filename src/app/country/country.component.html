@@ -1,0 +1,87 @@
+
+<h1 > Complete details about {{name$}}</h1>
+
+
+
+<div class="country" *ngFor="let detail of country$">
+  
+
+  
+  <div  class="card shadow-lg  bg-white rounded" style="width: 60rem;">
+      <img class="card-img-top" src="{{detail.flag}}"  alt="Card image cap">
+      <div class="card-body">
+          <h2 class="card-title">{{ detail.name }}</h2>
+        <table class="table">
+          <tr>
+            <th > Name</th><th>Details</th>
+          </tr>
+          <tr>
+            <td>Capital:</td><td>{{ detail.capital }}</td>
+          </tr>
+          <tr>
+            <td>topLevelDomain:</td><td>{{ detail.topLevelDomain }}</td>
+          </tr>
+          <tr>
+              <td>alpha3Code:</td><td>{{ detail.alpha3Code }}</td>
+            </tr>
+            <tr>
+                <td>callingCodes:</td><td>{{ detail.callingCodes }}</td>
+              </tr>
+              <tr>
+                  <td>population:</td><td>{{ detail.population }}</td>
+                </tr>
+                <tr>
+                    <td>region:</td><td>{{ detail.region }}</td>
+                  </tr>
+                  <tr>
+                      <td>subregion:</td><td>{{ detail.subregion }}</td>
+                    </tr>
+                    <tr>
+                        <td>demonym:</td><td>{{ detail.demonym }}</td>
+                      </tr>
+                      <tr>
+                          <td>area:</td><td>{{ detail.area }}</td>
+                        </tr>
+                        <tr>
+                            <td>gini:</td><td>{{ detail.gini }}</td>
+                          </tr>
+                          <tr>
+                              <td>nativeName:</td><td>{{ detail.nativeName }}</td>
+                            </tr>
+                            <tr>
+                                <td>numericCode:</td><td>{{ detail.numericCode }}</td>
+                              </tr>
+                              <tr>
+                                  <td >altSpellings:</td><td>{{ detail.altSpellings[0] }}<br>
+                                      {{ detail.altSpellings[1] }}<br>
+                                      {{ detail.altSpellings[2] }}
+          </td>
+                                </tr>
+                                <tr>
+                                    <td>currencies:</td><td>Code:{{ detail.currencies[0].code }}
+                                      <br>Name:{{ detail.currencies[0].name }}
+                                      <br>Symbol:{{ detail.currencies[0].symbol }}
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>languages:</td><td>iso639_1:{{ detail.languages[0].iso639_1 }}
+                                        <br>iso639_2:{{ detail.languages[0].iso639_2 }}
+                                        <br>name:{{ detail.languages[0].name }}
+                                        <br>nativeName:{{ detail.languages[0].nativeName }}
+
+                                      </td>
+                                    </tr>
+
+
+
+        </table>
+       
+       
+
+        
+
+      
+      </div>
+    </div>
+  </div>
+
