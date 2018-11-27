@@ -18,5 +18,11 @@ export class DataService {
 
     return this.http.get('https://restcountries.eu/rest/v2/all');
   }
+  getCountriesByLang(code) {
+    return this.http.get('https://restcountries.eu/rest/v2/lang/' + code);
+  }
+  getCountriesByCurrency(code) {
+    return this.http.get('https://restcountries.eu/rest/v2/currency/' + code);
+  }
 }
 

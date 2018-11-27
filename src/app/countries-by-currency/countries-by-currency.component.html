@@ -1,0 +1,20 @@
+
+<h1 > Countries based on your chosen Currency</h1>
+
+
+
+<div class="country" *ngFor="let country of countries$">
+
+
+
+  <div  class="card shadow-sm  bg-white rounded" style="width: 18rem;">
+      <img class="card-img-top" src="{{ country.flag }}" style=" max-height:150px;" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ country.name }}</h5>
+        <p class="card-text">Capital:{{ country.capital }}</p>
+             <p class="card-text">Population:{{ country.population }}</p>
+        <a routerLink="/country/{{country.name}}" class="btn btn-primary">Know more </a>
+      </div>
+    </div>
+  </div>
+

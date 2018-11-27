@@ -1,0 +1,12 @@
+.row{
+  background: lightblue;
+  color: brown;
+  vertical-align: middle;
+  margin: 10px;
+}
+a{
+  font-size:1.1em;
+  vertical-align: middle;
+  color: yellow;
+}
+

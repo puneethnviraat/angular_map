@@ -12,6 +12,8 @@ import { NavComponent } from './nav/nav.component';
 import { LanguageComponent } from './language/language.component';
 import { CurrencyComponent } from './currency/currency.component';
 import { currencyFilterPipe } from './currency/currency-filter.pipe';
+import { CountriesByLangComponent } from './countries-by-lang/countries-by-lang.component';
+import { CountriesByCurrencyComponent } from './countries-by-currency/countries-by-currency.component';
 
 
 
@@ -25,7 +27,9 @@ import { currencyFilterPipe } from './currency/currency-filter.pipe';
     LanguageComponent,
     CurrencyComponent,
     languageFilterPipe,
-    currencyFilterPipe
+    currencyFilterPipe,
+    CountriesByLangComponent,
+    CountriesByCurrencyComponent
   ],
   imports: [
     BrowserModule,

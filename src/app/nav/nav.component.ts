@@ -13,8 +13,6 @@ export class NavComponent implements OnInit {
 
   ngOnInit() {}
 
-
-
   cancel() {
     this.location.back();
   }

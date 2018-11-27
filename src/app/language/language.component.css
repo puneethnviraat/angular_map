@@ -1,0 +1,17 @@
+
+.btn{
+    min-width: 140px;
+    margin: 10px;
+    float: left;
+    font-size: 1.15em;
+
+}
+.btn:hover{
+  background-color: chartreuse;
+  color: firebrick;
+
+}
+.buttons{
+  display: inline-block;
+}
+
